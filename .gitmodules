@@ -1,0 +1,9 @@
+[submodule "dependencies/core"]
+	path = dependencies/core
+	url = https://github.com/DSanzh/ExampleCore
+[submodule "dependencies/data"]
+	path = dependencies/data
+	url = https://github.com/DSanzh/ExampleData
+[submodule "dependencies/framework"]
+	path = dependencies/framework
+	url = https://github.com/DSanzh/ExampleFramework
