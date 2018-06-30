@@ -8,4 +8,6 @@ target 'ExampleApp' do
   # Pods for ExampleApp
 	pod 'ExampleData', :path => './dependencies/data'
 	pod 'ExampleCore', :path => './dependencies/core'
+	pod 'ExampleFramework', :path => './dependencies/framework'
+    pod 'EasyPeasy'
 end

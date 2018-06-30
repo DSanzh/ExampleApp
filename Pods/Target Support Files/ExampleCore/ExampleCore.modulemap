@@ -1,0 +1,6 @@
+framework module ExampleCore {
+  umbrella header "ExampleCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

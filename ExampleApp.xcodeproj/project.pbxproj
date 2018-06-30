@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		50BA8F1FAFB155BEE4519F47 /* Pods_ExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47910BD13ADEF31571D77A44 /* Pods_ExampleApp.framework */; };
+		9E3A4E0E20E65E0300C4C933 /* ExampleCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3A4E0D20E65E0300C4C933 /* ExampleCore.framework */; };
+		9E3A4E1020E65E1A00C4C933 /* ExampleFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3A4E0F20E65E1A00C4C933 /* ExampleFramework.framework */; };
 		9E3E765420E629050006F809 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3E765320E629050006F809 /* AppDelegate.swift */; };
 		9E3E765620E629050006F809 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3E765520E629050006F809 /* ViewController.swift */; };
 		9E3E765920E629050006F809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3E765720E629050006F809 /* Main.storyboard */; };
@@ -15,9 +17,24 @@
 		9E3E765E20E629060006F809 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E3E765C20E629060006F809 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9EBA80A520E65EE4004F157A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		47910BD13ADEF31571D77A44 /* Pods_ExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9068248E90F31FE4918E9080 /* Pods-ExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleApp/Pods-ExampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		9E3A4E0D20E65E0300C4C933 /* ExampleCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExampleCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E3A4E0F20E65E1A00C4C933 /* ExampleFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExampleFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3E765020E629050006F809 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3E765320E629050006F809 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E3E765520E629050006F809 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E3A4E1020E65E1A00C4C933 /* ExampleFramework.framework in Frameworks */,
+				9E3A4E0E20E65E0300C4C933 /* ExampleCore.framework in Frameworks */,
 				50BA8F1FAFB155BEE4519F47 /* Pods_ExampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +62,8 @@
 		04C81AABDEC65428E5CA0A5D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E3A4E0F20E65E1A00C4C933 /* ExampleFramework.framework */,
+				9E3A4E0D20E65E0300C4C933 /* ExampleCore.framework */,
 				47910BD13ADEF31571D77A44 /* Pods_ExampleApp.framework */,
 			);
 			name = Frameworks;
@@ -100,6 +121,7 @@
 				9E3E764D20E629050006F809 /* Frameworks */,
 				9E3E764E20E629050006F809 /* Resources */,
 				D9319FF66534C140BC460285 /* [CP] Embed Pods Frameworks */,
+				9EBA80A520E65EE4004F157A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,10 +205,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ExampleApp/Pods-ExampleApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EasyPeasy/EasyPeasy.framework",
+				"${BUILT_PRODUCTS_DIR}/ExampleCore/ExampleCore.framework",
+				"${BUILT_PRODUCTS_DIR}/ExampleFramework/ExampleFramework.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyPeasy.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExampleCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ExampleFramework.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

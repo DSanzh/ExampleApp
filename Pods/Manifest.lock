@@ -4,10 +4,14 @@ PODS:
     - EasyPeasy
   - ExampleData (0.0.1):
     - EasyPeasy
+  - ExampleFramework (0.0.1):
+    - EasyPeasy
 
 DEPENDENCIES:
+  - EasyPeasy
   - ExampleCore (from `./dependencies/core`)
   - ExampleData (from `./dependencies/data`)
+  - ExampleFramework (from `./dependencies/framework`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,12 +22,15 @@ EXTERNAL SOURCES:
     :path: "./dependencies/core"
   ExampleData:
     :path: "./dependencies/data"
+  ExampleFramework:
+    :path: "./dependencies/framework"
 
 SPEC CHECKSUMS:
   EasyPeasy: 2f2785ed78c6f9e9045221f2ff317730e7321bff
-  ExampleCore: d057475b348eef340f3ee3dee25fa6dc7b514035
+  ExampleCore: 53e68eef3220ba80da77759c68916c0c67bdea3b
   ExampleData: 9cfdd341b66710806238a6e7c8e05adb06f31028
+  ExampleFramework: 734e75efc5dc17eb0ff5a42924195bbe7100cddf
 
-PODFILE CHECKSUM: fe24edb090f7da780ca4494ec3232d14938d15cf
+PODFILE CHECKSUM: 488b99cf0c36565a0a0d645e8c45c905cdd10f95
 
 COCOAPODS: 1.5.3

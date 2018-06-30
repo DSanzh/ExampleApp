@@ -4,3 +4,6 @@
 [submodule "dependencies/data"]
 	path = dependencies/data
 	url = https://github.com/DSanzh/ExampleData
+[submodule "dependencies/framework"]
+	path = dependencies/framework
+	url = https://github.com/DSanzh/ExampleFramework

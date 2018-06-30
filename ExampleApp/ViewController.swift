@@ -7,11 +7,22 @@
 //
 
 import UIKit
+import EasyPeasy
+import ExampleFramework
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+            let asd = NavigationBarView(withTitle: "Something")
+        view.addSubview(asd)
+        asd.easy.layout([
+            Top(),
+            Left(),
+            Right(),
+            Height(64)
+            ])
         // Do any additional setup after loading the view, typically from a nib.
     }
 
